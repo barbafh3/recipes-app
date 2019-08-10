@@ -1,0 +1,5 @@
+<app-header (headerCallback)="receiveHeaderCallback($event)"></app-header>
+<div class="container">
+  <app-recipes *ngIf="currentPage === 'recipes'"></app-recipes>
+  <app-shopping-list *ngIf="currentPage === 'shop-list'"></app-shopping-list>
+</div>
